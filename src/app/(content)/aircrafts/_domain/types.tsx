@@ -1,12 +1,6 @@
 import { InferType } from 'yup';
 import { loginSchema } from './validators';
 
-export interface LoginForm {
-  email: string;
-  password: string;
-  rememberIndex: boolean;
-}
-
 export type LoginFormValues = InferType<typeof loginSchema>;
 
 export interface AircraftManufacturer {

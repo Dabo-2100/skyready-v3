@@ -9,7 +9,7 @@ type Props = {
   as?: string;
 };
 
-export default function FormField({ label, name, placeholder, type }: Props) {
+export default function FormField({ label, name, placeholder, type }: Readonly<Props>) {
   return (
     <div className="flex flex-col gap-2">
       {type === 'checkbox' ? (
