@@ -5,7 +5,7 @@ export const LOGIN_MUTATION = gql`
     login(input: { identifier: $email, password: $password }) {
       jwt
       user {
-        id
+        documentId
         email
         username
       }

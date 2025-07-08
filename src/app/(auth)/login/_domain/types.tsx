@@ -16,5 +16,10 @@ export type AircraftManufacturersQuery = {
 export type LoginMutationData = {
   login: {
     jwt: string;
+    user: {
+      documentId: string;
+      email: string;
+      username: string;
+    };
   };
 };

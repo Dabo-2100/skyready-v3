@@ -17,6 +17,5 @@ export function middleware(request: NextRequest) {
   if (!isAuthPage && !isStaticAsset && !token) {
     return NextResponse.redirect(new URL('/login', request.url));
   }
-
   return NextResponse.next();
 }

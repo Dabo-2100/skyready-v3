@@ -17,7 +17,8 @@ export function useLogin() {
       if (data) {
         toast.success('Login success!');
         Cookies.set('jwt', data.login.jwt);
-        router.push('/dashboard');
+        Cookies.set('user', JSON.stringify(data.login.user));
+        router.push('/');
       }
     } catch (error) {
       if (error instanceof ApolloError) {
