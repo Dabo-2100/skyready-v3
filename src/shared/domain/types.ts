@@ -3,5 +3,7 @@ export interface Aircraft {
   tailNo: string;
   serialNo: string;
   customerNo: string;
-  status: string;
+  aircraft_status: {
+    name: string;
+  };
 }

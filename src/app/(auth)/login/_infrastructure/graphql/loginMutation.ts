@@ -6,8 +6,8 @@ export const LOGIN_MUTATION = gql`
       jwt
       user {
         id
-        username
         email
+        username
       }
     }
   }
